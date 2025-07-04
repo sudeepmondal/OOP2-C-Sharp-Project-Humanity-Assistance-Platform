@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8A30C0C3-EF1A-4763-A666-74734C739088}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PublicFund</RootNamespace>
+    <AssemblyName>PublicFund</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPassword.Designer.cs">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.Designer.cs">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEvent.Designer.cs">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteEvent.Designer.cs">
+      <DependentUpon>DeleteEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteSponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteSponsor.Designer.cs">
+      <DependentUpon>DeleteSponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteVolunteer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteVolunteer.Designer.cs">
+      <DependentUpon>DeleteVolunteer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Donation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Donation.Designer.cs">
+      <DependentUpon>Donation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Event.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Event.Designer.cs">
+      <DependentUpon>Event.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EventManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventManagement.Designer.cs">
+      <DependentUpon>EventManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForgotPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForgotPassword.Designer.cs">
+      <DependentUpon>AdminForgotPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="function.cs" />
+    <Compile Include="Funds.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funds.Designer.cs">
+      <DependentUpon>Funds.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GetInvited.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GetInvited.Designer.cs">
+      <DependentUpon>GetInvited.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="History.Designer.cs">
+      <DependentUpon>History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InviteVolunteer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InviteVolunteer.Designer.cs">
+      <DependentUpon>InviteVolunteer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteersParticipation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolunteersParticipation.Designer.cs">
+      <DependentUpon>VolunteersParticipation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sponsor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sponsor.Designer.cs">
+      <DependentUpon>Sponsor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateSponsorProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateSponsorProfile.Designer.cs">
+      <DependentUpon>UpdateSponsorProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SponsorList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SponsorList.Designer.cs">
+      <DependentUpon>SponsorList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SponsorProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SponsorProfile.Designer.cs">
+      <DependentUpon>SponsorProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateEvent.Designer.cs">
+      <DependentUpon>UpdateEvent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SponsorRegistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SponsorRegistration.Designer.cs">
+      <DependentUpon>SponsorRegistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateVolunteerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateVolunteerProfile.Designer.cs">
+      <DependentUpon>UpdateVolunteerProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VollunteerReg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VollunteerReg.Designer.cs">
+      <DependentUpon>VollunteerReg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Volunteer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Volunteer.Designer.cs">
+      <DependentUpon>Volunteer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolunteerList.Designer.cs">
+      <DependentUpon>VolunteerList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VolunteerProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VolunteerProfile.Designer.cs">
+      <DependentUpon>VolunteerProfile.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPassword.resx">
+      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePassword.resx">
+      <DependentUpon>ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateEvent.resx">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteEvent.resx">
+      <DependentUpon>DeleteEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteSponsor.resx">
+      <DependentUpon>DeleteSponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteVolunteer.resx">
+      <DependentUpon>DeleteVolunteer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Donation.resx">
+      <DependentUpon>Donation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Event.resx">
+      <DependentUpon>Event.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventManagement.resx">
+      <DependentUpon>EventManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForgotPassword.resx">
+      <DependentUpon>AdminForgotPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funds.resx">
+      <DependentUpon>Funds.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GetInvited.resx">
+      <DependentUpon>GetInvited.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="History.resx">
+      <DependentUpon>History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InviteVolunteer.resx">
+      <DependentUpon>InviteVolunteer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolunteersParticipation.resx">
+      <DependentUpon>VolunteersParticipation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sponsor.resx">
+      <DependentUpon>Sponsor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateSponsorProfile.resx">
+      <DependentUpon>UpdateSponsorProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SponsorList.resx">
+      <DependentUpon>SponsorList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SponsorProfile.resx">
+      <DependentUpon>SponsorProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateEvent.resx">
+      <DependentUpon>UpdateEvent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SponsorRegistration.resx">
+      <DependentUpon>SponsorRegistration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateVolunteerProfile.resx">
+      <DependentUpon>UpdateVolunteerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VollunteerReg.resx">
+      <DependentUpon>VollunteerReg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Volunteer.resx">
+      <DependentUpon>Volunteer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolunteerList.resx">
+      <DependentUpon>VolunteerList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VolunteerProfile.resx">
+      <DependentUpon>VolunteerProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
